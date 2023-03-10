@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230310001000">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230310182214">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,14 +83,24 @@
 						<a href="#" class="header__link">About Fortytwo</a>
 					</li>
 				</ul>
-				<button type="button" class="header__user">
-					<div class="header__image">
-						<picture><source srcset="img/user.webp" type="image/webp"><img src="img/user.jpg" alt=""></picture>
+				<div class="header__user">
+					<button type="button" class="header__user-info">
+						<div class="header__image">
+							<picture><source srcset="img/user.webp" type="image/webp"><img src="img/user.jpg" alt=""></picture>
+						</div>
+						<svg width="24" height="24">
+							<use xlink:href="img/icons/icons.svg#svg-arr-down"></use>
+						</svg>
+					</button>
+					<div class="header__user-about">
+						<ul>
+							<li>Lorem</li>
+							<li>Lorem</li>
+							<li>Lorem</li>
+							<li>Lorem</li>
+						</ul>
 					</div>
-					<svg width="24" height="24">
-						<use xlink:href="img/icons/icons.svg#svg-arr-down"></use>
-					</svg>
-				</button>
+				</div>
 			</header>
 			<main class="page__dashboard dashboard">
 				<div class="dashboard__head-row">
@@ -110,9 +120,9 @@
 								<h3 class="chart-dashboard__caption">Secure Score</h3>
 								<div class="chart-dashboard__items">
 									<div class="chart-dashboard__item active" data-series="76, 60, 11, 94, 60, 3, 84, 93, 35, 65, 24, 18"></div>
-									<div class="chart-dashboard__item" data-series="60, 3, 84, 93, 35, 65, 24, 18,76, 60, 11, 94"></div>
-									<div class="chart-dashboard__item" data-series="93, 35, 65, 24, 18,76, 60, 60, 3, 84, 11, 94"></div>
-									<div class="chart-dashboard__item" data-series="35, 65, 24, 18,76, 60, 11, 94, 60, 3, 84, 93"></div>
+									<!-- <div class="chart-dashboard__item" data-series="60, 3, 84, 93, 35, 65, 24, 18,76, 60, 11, 94"></div>
+            <div class="chart-dashboard__item" data-series="93, 35, 65, 24, 18,76, 60, 60, 3, 84, 11, 94"></div>
+            <div class="chart-dashboard__item" data-series="35, 65, 24, 18,76, 60, 11, 94, 60, 3, 84, 93"></div> -->
 								</div>
 							</div>
 							<div class="chart-dashboard__buttons">
@@ -129,6 +139,14 @@
 									</linearGradient>
 								</defs>
 							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+								<defs>
+									<linearGradient id="b" x1="339" x2="339" y1="-401.651" y2="251" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#843bdd" />
+										<stop offset="1" stop-color="#843bdd" stop-opacity="0" />
+									</linearGradient>
+								</defs>
+							</svg>
 						</div>
 						<section class="data-block">
 							<h2 class="data-block__title label">Top Recommendations</h2>
@@ -137,23 +155,23 @@
 									<div class="data-block__first-item">Date</div>
 									<div class="data-block__item">Change</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023</div>
 									<div class="data-block__item">Review newly established attack path for Global Administrator</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023</div>
 									<div class="data-block__item">Adopt persona based conditional access</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023</div>
 									<div class="data-block__item">Start using DMARC for all domains</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023</div>
 									<div class="data-block__item">Enable the safe attachments feature</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023</div>
 									<div class="data-block__item">Enable the safe attachments feature</div>
 								</div>
@@ -164,29 +182,29 @@
 					</div>
 					<div class="dashboard__middle-row">
 						<section class="data-block">
-							<h2 class="data-block__title label">Top Recommendations</h2>
+							<h2 class="data-block__title label">Changelog</h2>
 							<div class="data-block__body">
 								<div class="data-block__row data-block__row--top">
 									<div class="data-block__first-item">Date</div>
 									<div class="data-block__item">Change</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023</div>
 									<div class="data-block__item">Enabled MFA</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">8/5/2023</div>
 									<div class="data-block__item">Removed old SQL Cluster</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">11/15/2022</div>
 									<div class="data-block__item">Deleted all keyvaults</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">9/15/2022</div>
 									<div class="data-block__item">Implemented MAP from 42</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">11/15/2021</div>
 									<div class="data-block__item">Upgraded prod k8s cluster</div>
 								</div>
@@ -222,23 +240,23 @@
 									<div class="data-block__first-item">Registration Date</div>
 									<div class="data-block__item">Enterprise Applications</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023 12:00:00</div>
 									<div class="data-block__item">Dropbox for Business</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023 12:00:00</div>
 									<div class="data-block__item">Shady Joes Financial Reporting</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023 12:00:00</div>
 									<div class="data-block__item">IAM By 42</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023 12:00:00</div>
 									<div class="data-block__item">Netflix</div>
 								</div>
-								<div class="data-block__row">
+								<div class="data-block__row" data-popup="#context-menu">
 									<div class="data-block__first-item">12/12/2023 12:00:00</div>
 									<div class="data-block__item">Mockface 2k Turbo</div>
 								</div>
@@ -290,13 +308,13 @@
 									</button>
 								</div>
 							</div>
-							<div class="dashboard-info__row">
+							<div class="dashboard-info__row" data-popup="#context-menu">
 								<div class="dashboard-info__item dashboard-info__item--policy">LockoutThreshold</div>
 								<div class="dashboard-info__item dashboard-info__item--system">Azure AD</div>
 								<div class="dashboard-info__item dashboard-info__item--category">User Account Security</div>
 								<div class="dashboard-info__item dashboard-info__item--compliant dashboard-info__item--error"><span>Non-Compliant</span></div>
 								<div class="dashboard-info__item dashboard-info__item--actions">
-									<div class="dashboard-info__warning-icon">
+									<div class="dashboard-info__warning-icon" title="Accept Risk">
 										<svg width="24" height="24">
 											<use xlink:href="img/icons/icons.svg#svg-warning"></use>
 										</svg>
@@ -309,13 +327,13 @@
 									</button>
 								</div>
 							</div>
-							<div class="dashboard-info__row">
+							<div class="dashboard-info__row" data-popup="#context-menu">
 								<div class="dashboard-info__item dashboard-info__item--policy">BlockUserConsentForRickyApps</div>
 								<div class="dashboard-info__item dashboard-info__item--system">Azure AD</div>
 								<div class="dashboard-info__item dashboard-info__item--category">Application Governance</div>
 								<div class="dashboard-info__item dashboard-info__item--compliant dashboard-info__item--succes"><span>Compliant</span></div>
 								<div class="dashboard-info__item dashboard-info__item--actions">
-									<div class="dashboard-info__warning-icon">
+									<div class="dashboard-info__warning-icon" title="Accept Risk">
 										<svg width="24" height="24">
 											<use xlink:href="img/icons/icons.svg#svg-warning"></use>
 										</svg>
@@ -328,13 +346,13 @@
 									</button>
 								</div>
 							</div>
-							<div class="dashboard-info__row">
+							<div class="dashboard-info__row" data-popup="#context-menu">
 								<div class="dashboard-info__item dashboard-info__item--policy">TenantBrandingInfo</div>
 								<div class="dashboard-info__item dashboard-info__item--system">Azure AD</div>
 								<div class="dashboard-info__item dashboard-info__item--category">User Experience</div>
 								<div class="dashboard-info__item dashboard-info__item--compliant dashboard-info__item--warning"><span>Accepted Risk</span></div>
 								<div class="dashboard-info__item dashboard-info__item--actions">
-									<div class="dashboard-info__warning-icon">
+									<div class="dashboard-info__warning-icon" title="Accept Risk">
 										<svg width="24" height="24">
 											<use xlink:href="img/icons/icons.svg#svg-warning"></use>
 										</svg>
@@ -354,8 +372,23 @@
 			</main>
 		</div>
 	</div>
-	<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js?_v=20230310001000"></script>
-	<script src="js/app.min.js?_v=20230310001000"></script>
+	<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js?_v=20230310182214"></script>
+	<script src="js/app.min.js?_v=20230310182214"></script>
+	<div id="context-menu" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="20" height="20">
+						<use xlink:href="img/icons/icons.svg#svg-close"></use>
+					</svg>
+				</button>
+				<div class="popup__text">
+					<h2>More Info</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ex impedit libero facilis unde inventore laboriosam perferendis. Rerum nemo, deleniti eaque voluptates, natus repellat voluptatem perferendis suscipit possimus dolorum ducimus!</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
